@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\facepvms.o
+./debug\DefineCalendar.o
+./debug\DefDateTimeEdit.o
+./debug\global.o
+./debug\facerecognize.o
+./debug\database.o
+./debug\qrc_resources.o
+./debug\moc_facepvms.o
+./debug\moc_DefineCalendar.o
+./debug\moc_DefDateTimeEdit.o
+);
