@@ -132,7 +132,7 @@ void WorkerThread::run()
             }
 
             if( (*itor).isDetected ) {
-                 itemRealMatStream;
+                RealMatStream itemRealMatStream;
                 itemRealMatStream.initialize();
                 itemRealMatStream.recordTime = (*itor).recordTime;
                 itemRealMatStream.qstrDevNum = (*itor).qstrDevNum;

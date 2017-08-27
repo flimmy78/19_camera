@@ -145,8 +145,8 @@ typedef double                  mpDOUBLE;
 #define H_ITEMSIZE   142
 
 #define SET_SOFTWARE_DUE_DATE   "2017-09-25"
-#define SET_SCREENSHOT_IMAGE    1
-#define SET_SYSTEM_LANGUAGE_CHINESE 1
+#define SET_SCREENSHOT_IMAGE    
+#define SET_SYSTEM_LANGUAGE_CHINESE 
 
 typedef struct
 {
