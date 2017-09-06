@@ -20,8 +20,6 @@ protected:
     virtual void run();
  private:
     seeta::FaceDetection *m_pFaceDet;
-    seeta::FaceAlignment *m_pFaceAli;
-    seeta::FaceIdentification *m_pFaceIde;
     int m_iMinFaceSize;
     CascadeClassifier m_cascFace;
 };

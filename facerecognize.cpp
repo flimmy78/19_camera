@@ -45,11 +45,6 @@ void WorkerThread::InitFaceModel()
         cout<<"starting Load face detection libs..."<<endl;
         // Initialize face Detection model
         m_pFaceDet = new FaceDetection((qstrCurPath + FACE_MODES_DIR + "face_fd.bin").toStdString().c_str());
-        // Initialize face alignment model
-        m_pFaceAli = new FaceAlignment((qstrCurPath + FACE_MODES_DIR + "face_fa.bin").toStdString().c_str());
-        // Initialize face Identification model
-        m_pFaceIde = new FaceIdentification((qstrCurPath + FACE_MODES_DIR + "face_fr.bin").toStdString().c_str());
-
         m_pFaceDet->SetMinFaceSize(m_iMinFaceSize);
         m_pFaceDet->SetScoreThresh(2.f);
         m_pFaceDet->SetImagePyramidScaleFactor(0.8f);
@@ -70,18 +65,6 @@ void WorkerThread::InitFaceModel()
      {
          delete m_pFaceDet;
          m_pFaceDet = mpNULL;
-     }
-
-     if(mpNULL != m_pFaceAli)
-     {
-         delete m_pFaceAli;
-         m_pFaceAli = mpNULL;
-     }
-
-     if(mpNULL != m_pFaceIde)
-     {
-         delete m_pFaceIde;
-         m_pFaceIde = mpNULL;
      }
  }
 
@@ -132,18 +115,8 @@ void WorkerThread::run()
             }
 
             if( (*itor).isDetected ) {
-                RealMatStream itemRealMatStream;
-                itemRealMatStream.initialize();
-                itemRealMatStream.recordTime = (*itor).recordTime;
-                itemRealMatStream.qstrDevNum = (*itor).qstrDevNum;
-                itemRealMatStream.qstrImagePath = (*itor).qstrImagePath;
-                itemRealMatStream.dueTime =  (*itor).dueTime;
-                (*itor).matImage.copyTo(itemRealMatStream.matImage);
-                (*itor).isDetected = mpFALSE;
-                detectFaceNumWithFrame(itemRealMatStream);
-               (*itor).isDetected = mpFALSE;
                detectFaceNumWithFrame((*itor));
-
+               (*itor).isDetected = mpFALSE;
             }
         }
         usleep(USLEEP_DELAY_100MS);//wait Nms
