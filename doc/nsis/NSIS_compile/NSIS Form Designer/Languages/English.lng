@@ -1,0 +1,324 @@
+; *** Inno Setup Form Designer - Translation ***
+;
+; Author:   Marc Hoffmann
+; Language: English
+; Created:  2004/04/21
+; Updated:  2005/04/29
+;
+
+;
+; --- Buttons/Dialogs/Messages ------------------------
+;
+
+[Common]
+OKButton='OK'
+CancelButton='Cancel'
+ApplyButton='&Apply'
+Undo='&Undo'
+Redo='&Redo'
+UndoTyping=': typing'
+UndoDelete=': delete'
+UndoDragDrop=': drag and drop'
+UndoCut=': cut'
+UndoPaste=': paste'
+CountInfo='Lines: %d'
+LineInfo='Line: %3d, Col: %3d'
+
+[Dialogs]
+OpenForm='Open Form...'
+SaveForm='Save Form...'
+SaveFormAs='Save Form As...'
+OpenText='Open Text...'
+SaveText='Save Text...'
+
+[Messages]
+ExclamParentConflict='All selected controls must have the same parent!'
+ExclamNoTabOrderControls='All selected controls must have a published ''TabOrder'' property!'
+ConfirmTitle='Confirm'
+ConfirmCloseEditor='Do you really want to discard your changes?'
+ConfirmCloseForm='Form "%s" has been modified.'#13#13'Do you want to save this form before closing?'
+ConfirmSaveChanges='Do you want to save your changes?'
+UpdateNoNewVersion='There are no new versions available.'
+UpdateNewVersion='Inno Setup Form Designer Version %s available for download.'#13#13'Do you want to download & install the update now?'
+UpdateConfirmCancel='Are you sure to cancel the download process?'
+UpdateDownload='Transfering "%s"...'
+UpdateFailed='While updating Inno Setup Form Designer, the following error occurs:'#13#13'%s'
+UpdateProceeded='Inno Setup Form Designer-Update has been successfully downloaded and'#13'will be installed now. If the update does not start automatically,'#13'please execute the following file manually:'#13#13'%s'
+
+[Tips]
+AutoCopy='Tip: As soon as you select a textblock, it will be automatically copied to the clipboard.'
+
+;
+; --- Main GUI ----------------------------------------
+;
+
+[TfrmMain]
+; ### Toolbars ###
+tlbMainMenu.Caption='MainMenu'
+tlbStandard.Caption='Standard'
+pnlControls.Caption='Toolbox'
+pnlInspector.Caption='Object Inspector'
+
+; ### Menu Topics ###
+miFileMenu.Caption='&File'
+miEditMenu.Caption='&Edit'
+miViewMenu.Caption='&View'
+miViewToolbars.Caption='&Toolbars'
+miViewToolbarsStandard.Caption='Standard'
+miViewToolbarsStandard.Control.Caption='Standard'
+miHelpMenu.Caption='&Help'
+
+; ### File Menu ###
+acFileNewForm.Caption='&New Form'
+acFileNewForm.Hint='New Form|Creates new form'
+acFileOpenForm.Caption='&Open Form...'
+acFileOpenForm.Hint='Open Form|Opens form'
+acFileReopen.Caption='&Re-Open...'
+acFileReopen.Hint='Re-Open|Opens previous loaded file'
+; ---
+acFileSaveForm.Caption='&Save Form'
+acFileSaveForm.Hint='Save Form|Saves form'
+acFileSaveFormAs.Caption='Save Form &As'
+acFileSaveFormAs.Hint='Save Form As|Saves form as'
+; ---
+acFilePreferences.Caption='&Preferences...'
+acFilePreferences.Hint='Preferences|Set application preferences'
+; ---
+acFileExit.Caption='&Exit'
+acFileExit.Hint='Exit|Exit application'
+
+; ### Edit Menu ###
+acEditUndo.Caption='&Undo'
+acEditUndo.Hint='Undo|Reverts the last action'
+acEditRedo.Caption='&Redo'
+acEditRedo.Hint='Redo|Reverts the last undo'
+; ---
+acEditCut.Caption='Cu&t'
+acEditCut.Hint='Cut|Cuts the selection and puts it on the Clipboard'
+acEditCopy.Caption='&Copy'
+acEditCopy.Hint='Copy|Copies the selection and puts it on the Clipboard'
+acEditPaste.Caption='&Paste'
+acEditPaste.Hint='Paste|Inserts Clipboard contents'
+acEditSelectAll.Caption='Select &All'
+acEditSelectAll.Hint='Select All|Selects the entire document'
+; ---
+acEditAlignToGrid.Caption='Align to &Grid'
+acEditAlignToGrid.Hint='Align to Grid|Aligns selected controls to the grid'
+acEditAlignToHelpLines.Caption='Align to &HelpLines'
+acEditAlignToHelpLines.Hint='Align to HelpLines|Aligns selected controls to the helplines'
+acEditBringToFront.Caption='Bring to &Front'
+acEditBringToFront.Hint='Bring to Front|Brings selected components to front'
+acEditSendToBack.Caption='Send to &Back'
+acEditSendToBack.Hint='Send to Back|Sends selected controls to back'
+acEditSetTabOrder.Caption='&Tab-Order'
+acEditSetTabOrder.Hint='Set Tab-Order|Set tab order of selected controls'
+; ---
+acEditLockControls.Caption='&Lock Controls'
+acEditLockControls.Hint='Lock Controls|Locks selected controls'
+
+; ### View Menu ###
+acViewCodeEditor.Caption='&Code-Editor'
+acViewCodeEditor.Hint='Code-Editor|Shows/Hides the code editor'
+acViewInspector.Caption='&Object Inspector'
+acViewInspector.Hint='Object Inspector|Shows/Hides the object inspector'
+acViewToolbox.Caption='&Toolbox'
+acViewToolbox.Hint='Toolbox|Shows/Hides the toolbox'
+
+; ### Help Menu ###
+acHelpContents.Caption='User-&Manual'
+acHelpContents.Hint='User Manual|Shows the online user manual'
+acHelpTipOfDay.Caption='&Tip of the Day'
+acHelpTipOfDay.Hint='Tip of the Day|Show Tip of the Day'
+acHelpCheckForUpdates.Caption='&Check For Updates'
+acHelpCheckForUpdates.Hint='Check For Updates|Checks for available online updates'
+acHelpAbout.Caption='&About...'
+acHelpAbout.Hint='About|Displays program information and copyright'
+
+; ### MAIN GUI ###
+tbsWorkSpace.Tabs.(0).Caption='Custom Form'
+tbsWorkSpace.Tabs.(1).Caption='Declaration'
+tbsWorkSpace.Tabs.(2).Caption='Implementation'
+tbsWorkSpace.Tabs.(3).Caption='Code Sample'
+tbsMode.Tabs.(0).Caption='Design'
+tbsMode.Tabs.(1).Caption='Runtime'
+
+;
+; --- Options Dialog ----------------------------------
+;
+
+[TfrmOptions]
+Caption='Preferences...'
+gbxGeneral.Caption='General'
+gbxCodeEditor.Caption='Code Editor'
+gbxDesigner.Caption='Designer'
+chkGeneralLoadLastProject.Caption='&Open last form on startup'
+chkGeneralBackupFiles.Caption='&Backup files before saving'
+lblDefaultLanguage.Caption='GUI-Language:'
+lblLookAndFeel.Caption='GUI-L&ook And Feel:'
+lblCodeEditorView.Caption='&Default-View:'
+cbxCodeEditorView.Items.Strings='Declarations','Implementation','Code Sample'
+lblCodeEditorCommentStyle.Caption='Comment Style:'
+lblCodeEditorCopyMode.Caption='&Code Indent:'
+chkCodeEditorAutoCopy.Caption='&Auto-Copy to Clipboard'
+chkCodeEditorUseWithBlocks.Caption='Use ''&With''-Blocks for property assignments'
+chkDesignerDisplayGrid.Caption='&Display Grid'
+lblDisplayGridHint.Caption='(Press ''#'' to override)'
+chkDesignerSnapToGrid.Caption='&Snap to Grid'
+lblDisplaySnapToGrid.Caption='(Press ''*'' to override)'
+lblDesignerGridSize.Caption='&Grid Size:'
+
+; ### Buttons ###
+btnOK.Left=162
+btnCancel.Left=242
+btnCancel.Width=75
+
+;
+; --- Tip Of Day --------------------------------------
+;
+[TfrmTipOfDay]
+Caption='Tip of Day'
+lbDoYouKnow.Caption='Did you know...'
+btnNextTip.Caption='&Next tip'
+btnPrevTip.Caption='&Previous tip'
+btnClose.Caption='Close'
+chkShowOnStartup.Caption='&Show on startup'
+
+;
+; --- Custom Wizard Page ------------------------------
+;
+
+[TfrmISWizardPage]
+picEditMenu.Caption='&Edit'
+picControlMenu.Caption='&Control'
+picPositionMenu.Caption='&Position'
+pipClosePage.Caption='&Close Form'
+pipClosePage.Hint='Close Form|Closes the current form'
+pbxCancelButton.Hint='Cancel'
+pbxBackButton.Hint='< Back'
+pbxNextButton.Hint='Next >'
+
+;
+; --- Code Editor -------------------------------------
+;
+
+[TfrmCode]
+Caption='Code-Editor'
+lblUsing.Caption=' using '
+acEditCopy.Caption='&Copy'
+acEditCopy.Hint='Copy|Copies source to clipboard'
+acFileClose.Caption='&Close'
+acFileClose.Hint='Close|Closes Code-Editor'
+cbxSelection.Strings.Strings='whole source','selection only'
+
+;
+; --- String List Editor ------------------------------
+;
+
+[TfrmStringsEdit]
+; ### File Menu ###
+acFileNew.Caption='&New'
+acFileNew.Hint='New|Creates new text'
+; ---
+acFileOpen.Caption='&Open...'
+acFileOpen.Hint='Open|Opens text'
+acFileSave.Caption='&Save'
+acFileSave.Hint='Save|Saves text'
+
+; ### Edit Menu ###
+acEditUndo.Caption='&Undo'
+acEditUndo.Hint='Undo|Reverts the last action'
+; ---
+acEditCut.Caption='Cu&t'
+acEditCut.Hint='Cut|Cuts the selection and puts it on the Clipboard'
+acEditCopy.Caption='&Copy'
+acEditCopy.Hint='Copy|Copies the selection and puts it on the Clipboard'
+acEditPaste.Caption='&Paste'
+acEditPaste.Hint='Paste|Inserts Clipboard contents'
+; ---
+acEditDelete.Caption='&Delete'
+acEditDelete.Hint='Delete|Erases the selection'
+acEditSelectAll.Caption='Select &All'
+acEditSelectAll.Hint='Select All|Selects the entire document'
+
+; ### Buttons ###
+btnDialog.WidthCancel=75
+
+;
+; --- Rich Text Editor --------------------------------
+;
+
+[TfrmRichEdit]
+; ### Menu Topics ###
+miFileMenui.Caption='&File'
+miEditMenu.Caption='&Edit'
+miSearchMenu.Caption='&Search'
+miFormatMenu.Caption='&Format'
+
+; ### File Menu ###
+acFileNew.Caption='&New'
+acFileNew.Hint='New|Creates new text'
+; ---
+acFileOpen.Caption='&Open...'
+acFileOpen.Hint='Open|Opens text'
+acFileSave.Caption='&Save'
+acFileSave.Hint='Save|Saves text'
+; ---
+acFilePrint.Caption='&Print...'
+acFilePrint.Hint='Print|Prints text'
+
+; ### Edit Menu ###
+acEditUndo.Caption='&Undo'
+acEditUndo.Hint='Undo|Reverts the last action'
+acEditRedo.Caption='&Redo'
+acEditRedo.Hint='Redo|Reverts the last undo'
+; ---
+acEditCut.Caption='Cu&t'
+acEditCut.Hint='Cut|Cuts the selection and puts it on the Clipboard'
+acEditCopy.Caption='&Copy'
+acEditCopy.Hint='Copy|Copies the selection and puts it on the Clipboard'
+acEditPaste.Caption='&Paste'
+acEditPaste.Hint='Paste|Inserts Clipboard contents'
+; ---
+acEditDelete.Caption='&Delete'
+acEditDelete.Hint='Delete|Erases the selection'
+acEditSelectAll.Caption='Select &All'
+acEditSelectAll.Hint='Select All|Selects the entire document'
+
+; ### Format Menu ###
+acFormatFont.Caption='&Font'
+acFormatFont.Hint='Font|Display font dialog'
+acFormatDefaultColor.Caption='&Default Color'
+acFormatDefaultColor.Hint='Default Color|Sets the default color'
+acFormatMoreColors.Caption='&More Colors...'
+acFormatMoreColors.Hint='More Colors...|Displays more colors'
+acFormatBold.Caption='&Bold'
+acFormatBold.Hint='Bold|Formats selected text to bold'
+acFormatItalic.Caption='&Italic'
+acFormatItalic.Hint='Italic|Formats selected text to italic'
+acFormatUnderline.Caption='&Underline'
+acFormatUnderline.Hint='Underline|Formats selected text to underline'
+acFormatStrikeOut.Caption='&StrikeOut'
+acFormatStrikeOut.Hint='StrikeOut|Formats selected text to strikeout'
+acFormatSuperscript.Caption='&Superscript'
+acFormatSuperscript.Hint='Superscript|Formats selected text to superscript'
+acFormatSubscript.Caption='Su&bscript'
+acFormatSubscript.Hint='Subscript|Formats selected text to subscript'
+acFormatAlignLeft.Caption='Align &Left'
+acFormatAlignLeft.Hint='Align Left|Aligns text at the left indent'
+acFormatAlignCenter.Caption='&Center'
+acFormatAlignCenter.Hint='Center|Centers text between margins'
+acFormatAlignRight.Caption='Align &Right'
+acFormatAlignRight.Hint='Align Right|Aligns text at the right indent'
+acFormatBullets.Caption='&Bullets'
+acFormatBullets.Hint='Bullets|Inserts a bullet on the current line'
+
+; ### Search Menu ###
+acSearchFind.Caption='&Find...'
+acSearchFind.Hint='Find...|Finds specified text'
+acSearchFindNext.Caption='Find &Next'
+acSearchFindNext.Hint='Find Next|Finds next match'
+acSearchReplace.Caption='&Replace'
+acSearchReplace.Hint='Replace|Replaces text parts'
+
+; ### Buttons ###
+btnDialog.WidthCancel=75

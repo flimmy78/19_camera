@@ -1,0 +1,25 @@
+Version 1.0.3 (2005/06/15)
+
+   - Added components "Button" & "Unknown"
+   - Fixed minor typos (WebUpdate)
+
+Version 1.0.2 (2005/06/15)
+
+   - Added components "GroupBox", "Icon" & "Bitmap"
+   - Fixed backup file extension
+   - Fixed typos
+
+Version 1.0.1 (2005/06/14)
+
+   - Added some new components (missing componenets will follow asap)
+   - Support for flags
+   - Support for multilines (TNSISComboBox, TNSISDropList, ...)
+   - Support for State & ValidateText
+   - Minor design changes
+
+Version 1.0.0 (2005/05/14)
+
+   - First Release. Only support for two testing components: Label & Text!
+
+
+THIS IS AN EARLY BETA RELEASE!!!

@@ -1,0 +1,63 @@
+Software License Agreement
+
+END-USER LICENSE AGREEMENT FOR
+INNO SETUP FORM DESIGNER (NSNSISFD)
+
+
+IMPORTANT-READ CAREFULLY:
+
+This NSIS Form Designer License Agreement ("NSNSISFD") is a legal
+agreement between you (either an individual or a single entity) and
+me the author of NSISFD) for the software product identified above,
+which includes computer software and associated media and printed
+materials, and may include "online" or electronic documentation
+("SOFTWARE PRODUCT" or "SOFTWARE").  By installing, copying, or
+otherwise using the SOFTWARE PRODUCT, you agree to be bound by the
+terms of this NSNSISFD. If you do not agree to the terms of this NSNSISFD,
+promptly return the unused SOFTWARE PRODUCT to the place from which
+you obtained it for a full refund.
+
+SOFTWARE PRODUCT LICENSE
+
+1. GRANT OF LICENSE
+This NSNSISFD grants you the following rights:
+
+Permission - You may use this software for any purpose, including
+commercial applications - it's freeware.
+
+Systems Software - You may install and use as many copies of the
+SOFTWARE PRODUCTS as you want.
+
+Network Storage/Use -  You may also store or install a copy of the
+SOFTWARE PRODUCT on a storage device, such as a network server, used to
+install or run the SOFTWARE PRODUCT on your other computers over an
+internal network.
+
+Rental -  You may not rent or lease the SOFTWARE PRODUCT.
+
+Reverse Engineering - You may not reverse engineer, decompile or
+disassembly the SOFTWARE PRODUCT. If the SOFTWARE PRODUCT is
+released as Open Source, refer to the corresponding license included
+in the source package.
+
+2. COPYRIGHT
+All title and copyrights in and to the SOFTWARE PRODUCT (including but
+not limited to any images, photographs, animations, video, audio, music,
+text, and "applets," incorporated into the SOFTWARE PRODUCT), the
+accompanying printed materials, and any copies of the SOFTWARE PRODUCT,
+are owned by the author of NSISFD.  The SOFTWARE PRODUCT is protected by
+copyright laws and international treaty provisions.
+
+3. MISCELLANEOUS
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES
+To the maximum extent permitted by applicable law, in no event shall me be
+liable for any special, incidental, indirect, or consequential damages
+whatsoever (including, without limitation, damages for loss of business
+profits, business interruption, loss of business information, or any other
+pecuniary loss) arising out of the use of or inability to use the software
+product, even if I has been advised of the possibility of such damages.
+
+Marc Hoffmann
+support @ NSISFD.kaju74.de
+http://isfd.kaju74.de

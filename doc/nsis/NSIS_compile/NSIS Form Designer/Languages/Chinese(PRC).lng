@@ -1,0 +1,319 @@
+; *** Inno Setup Form Designer - Translation ***
+;
+; Author:   SunYJ
+; Language: Chinese (PRC)
+; Created:  2004/10/01
+; Updated:  2005/04/24
+;
+
+;
+; --- Buttons/Dialogs/Messages ------------------------
+;
+
+[Common]
+OKButton='确定'
+CancelButton='取消'
+ApplyButton='应用(&A)'
+Undo='撤销(&U)'
+Redo='重做(&R)'
+UndoTyping=': 键入'
+UndoDelete=': 删除'
+UndoDragDrop=': 拖放'
+UndoCut=': 剪切'
+UndoPaste=': 粘贴'
+CountInfo='行数: %d'
+LineInfo='行: %3d, 列: %3d'
+
+[Dialogs]
+OpenForm='打开窗体...'
+SaveForm='保存窗体...'
+SaveFormAs='保存窗体为...'
+OpenText='打开文本...'
+SaveText='保存文本...'
+
+[Messages]
+ConfirmTitle='确认'
+ConfirmCloseEditor='你真的想要放弃你的改变？'
+ConfirmCloseForm='窗体 "%s" 已被修改。'#13#13'关闭前你想要保存这个窗体吗？'
+ConfirmSaveChanges='你想要保存你的改变吗？'
+UpdateNoNewVersion='没有新版本可用。'
+UpdateNewVersion='Inno Setup Form Designer 版本 %s 下载可用。'#13#13'你想要现在下载并安装更新吗？'
+UpdateConfirmCancel='你确定取消下载进程吗？'
+UpdateDownload='正在传输 "%s"...'
+UpdateFailed='在更新 Inno Setup Form Designer 期间发生下面错误:'#13#13'%s'
+UpdateProceeded='Inno Setup Form Designer-更新已成功下载并'#13'现在安装。如果更新没有自动启动，'#13'请手工执行下面文件:'#13#13'%s'
+
+[Tips]
+AutoCopy='Tip: As soon as you select a textblock, it will be automatically copied to the clipboard.'
+
+;
+; --- Main GUI ----------------------------------------
+;
+
+[TfrmMain]
+; ### Toolbars ###
+tlbMainMenu.Caption='MainMenu'
+tlbStandard.Caption='标准'
+pnlControls.Caption='工具框'
+pnlInspector.Caption='对象检视器'
+
+; ### Menu Topics ###
+miFileMenu.Caption='文件(&F)'
+miEditMenu.Caption='编辑(&E)'
+miViewMenu.Caption='查看(&V)'
+miViewToolbars.Caption='工具栏(&T)'
+miViewToolbarsStandard.Caption='标准'
+miViewToolbarsStandard.Control.Caption='Standard'
+miHelpMenu.Caption='帮助(&H)'
+
+; ### File Menu ###
+acFileNewForm.Caption='新建窗体(&N)'
+acFileNewForm.Hint='新建窗体|创建新窗体'
+acFileOpenForm.Caption='打开窗体(&O)...'
+acFileOpenForm.Hint='打开窗体|打开窗体'
+acFileReopen.Caption='重新打开(&R)...'
+acFileReopen.Hint='重新打开|打开先前装载的文件'
+; ---
+acFileSaveForm.Caption='保存窗体(&S)'
+acFileSaveForm.Hint='保存窗体|保存窗体'
+acFileSaveFormAs.Caption='保存窗体为(&A)'
+acFileSaveFormAs.Hint='保存窗体为|保存窗体为'
+; ---
+acFilePreferences.Caption='参数选择(&P)...'
+acFilePreferences.Hint='参数选择|设置应用程序参数'
+; ---
+acFileExit.Caption='退出(&E)'
+acFileExit.Hint='退出|退出应用程序'
+
+; ### Edit Menu ###
+acEditUndo.Caption='撤销(&U)'
+acEditUndo.Hint='撤销|还原最后动作'
+acEditRedo.Caption='重做(&R)'
+acEditRedo.Hint='重做|还原最后撤销'
+; ---
+acEditCut.Caption='剪切(&t)'
+acEditCut.Hint='剪切|剪切选择并把它放在剪贴板上'
+acEditCopy.Caption='复制(&C)'
+acEditCopy.Hint='复制|复制选择并把它放在剪贴板上'
+acEditPaste.Caption='粘贴(&P)'
+acEditPaste.Hint='粘贴|插入剪贴板内容'
+acEditSelectAll.Caption='选择全部(&A)'
+acEditSelectAll.Hint='选择全部|选择整个文档'
+; ---
+acEditAlignToGrid.Caption='对齐到格线(&G)'
+acEditAlignToGrid.Hint='对齐到格线|对齐选定的控件到格线'
+acEditAlignToHelpLines.Caption='对齐到辅助线(&H)'
+acEditAlignToHelpLines.Hint='对齐到辅助线|对齐选定的控件到辅助线'
+acEditBringToFront.Caption='带到前面(&F)'
+acEditBringToFront.Hint='带到前面|把选定的组件带到前面'
+acEditSendToBack.Caption='送到后面(&B)'
+acEditSendToBack.Hint='送到后面|发送选定的控制到后面'
+; ---
+acEditLockControls.Caption='锁定控件(&L)'
+acEditLockControls.Hint='锁定控件|锁定选定的控制'
+
+; ### View Menu ###
+acViewCodeEditor.Caption='代码编辑器(&C)'
+acViewCodeEditor.Hint='代码编辑器|显示/隐藏代码编辑器'
+acViewInspector.Caption='对象检视器(&O)'
+acViewInspector.Hint='对象检视器|显示/隐藏对象检视器'
+acViewToolbox.Caption='工具箱(&T)'
+acViewToolbox.Hint='工具箱|显示/隐藏工具箱'
+
+; ### Help Menu ###
+acHelpContents.Caption='用户手册(&M)'
+acHelpContents.Hint='用户手册|显示在线用户手册'
+acHelpTipOfDay.Caption='每日提示(&T)'
+acHelpTipOfDay.Hint='每日提示|显示每日提示'
+acHelpCheckForUpdates.Caption='检测更新(&C)'
+acHelpCheckForUpdates.Hint='检查更新|在线检查可用更新'
+acHelpAbout.Caption='关于(&A)...'
+acHelpAbout.Hint='关于|显示程序信息和版权'
+
+; ### MAIN GUI ###
+tbsWorkSpace.Tabs.(0).Caption='Custom Form'
+tbsWorkSpace.Tabs.(1).Caption='声明'
+tbsWorkSpace.Tabs.(2).Caption='实现'
+tbsWorkSpace.Tabs.(3).Caption='代码样例'
+tbsMode.Tabs.(0).Caption='设计'
+tbsMode.Tabs.(1).Caption='运行时'
+
+;
+; --- Options Dialog ----------------------------------
+;
+
+[TfrmOptions]
+Caption='参数选择...'
+gbxGeneral.Caption='常规'
+gbxCodeEditor.Caption='代码编辑器'
+gbxDesigner.Caption='设计器'
+chkGeneralLoadLastProject.Caption='启动时打开最后窗体(&O)'
+lblDefaultLanguage.Caption='GUI-语言:'
+lblLookAndFeel.Caption='GUI-外观(&o):'
+lblCodeEditorView.Caption='默认查看(&D):'
+cbxCodeEditorView.Items.Strings='声明','实现','代码样例'
+lblCodeEditorCommentStyle.Caption='注释样式:'
+lblCodeEditorCopyMode.Caption='代码缩进(&C):'
+chkCodeEditorAutoCopy.Caption='自动复制到剪贴板(&A)'
+chkCodeEditorUseWithBlocks.Caption='对于属性分配使用 ''&With''-块'
+chkDesignerDisplayGrid.Caption='显示格线(&D)'
+lblDisplayGridHint.Caption='(按 ''#'' 忽略)'
+chkDesignerSnapToGrid.Caption='吸附到格线(&S)'
+lblDisplaySnapToGrid.Caption='(按 ''*'' 忽略)'
+lblDesignerGridSize.Caption='栅格大小(&G):'
+
+; ### Buttons ###
+btnOK.Left=162
+btnCancel.Left=242
+btnCancel.Width=75
+
+;
+; --- Tip Of Day --------------------------------------
+;
+[TfrmTipOfDay]
+Caption='每日提示'
+lbDoYouKnow.Caption='你知道吗...'
+btnNextTip.Caption='下一提示'
+btnPrevTip.Caption='前一提示'
+btnClose.Caption='关闭'
+chkShowOnStartup.Caption='在启动时显示(&S)'
+
+;
+; --- Custom Wizard Page ------------------------------
+;
+
+[TfrmISWizardPage]
+picEditMenu.Caption='编辑(&E)'
+picControlMenu.Caption='控件(&C)'
+picPositionMenu.Caption='位置(&P)'
+pipClosePage.Caption='关闭窗体(&C)'
+pipClosePage.Hint='关闭窗体|关闭当前窗体'
+pbxCancelButton.Hint='取消'
+pbxBackButton.Hint='< 上一步'
+pbxNextButton.Hint='下一步 >'
+
+;
+; --- Code Editor -------------------------------------
+;
+
+[TfrmCode]
+Caption='代码编辑器'
+lblUsing.Caption=' 使用 '
+acEditCopy.Caption='复制(&C)'
+acEditCopy.Hint='复制|复制源码到剪贴板'
+acFileClose.Caption='关闭(&C)'
+acFileClose.Hint='关闭|关闭代码编辑器'
+cbxSelection.Strings.Strings='整个源','仅选择'
+
+;
+; --- String List Editor ------------------------------
+;
+
+[TfrmStringsEdit]
+; ### File Menu ###
+acFileNew.Caption='新建(&N)'
+acFileNew.Hint='新建|创建新文本'
+; ---
+acFileOpen.Caption='打开(&O)...'
+acFileOpen.Hint='打开|打开文本'
+acFileSave.Caption='保存(&S)'
+acFileSave.Hint='保存|保存文本'
+
+; ### Edit Menu ###
+acEditUndo.Caption='撤销(&U)'
+acEditUndo.Hint='撤销|还原最后动作'
+; ---
+acEditCut.Caption='剪切(&t)'
+acEditCut.Hint='剪切|剪切选择并把它放在剪贴板上'
+acEditCopy.Caption='复制(&C)'
+acEditCopy.Hint='复制|复制选择并把它放在剪贴板上'
+acEditPaste.Caption='粘贴(&P)'
+acEditPaste.Hint='粘贴|插入剪贴板内容'
+; ---
+acEditDelete.Caption='删除(&D)'
+acEditDelete.Hint='删除|擦除选择'
+acEditSelectAll.Caption='选择全部(&A)'
+acEditSelectAll.Hint='选择全部|选择整个文档'
+
+; ### Buttons ###
+btnDialog.WidthCancel=75
+
+;
+; --- Rich Text Editor --------------------------------
+;
+
+[TfrmRichEdit]
+; ### Menu Topics ###
+miFileMenui.Caption='文件(&F)'
+miEditMenu.Caption='编辑(&E)'
+miSearchMenu.Caption='搜索(&S)'
+miFormatMenu.Caption='格式(&F)'
+
+; ### File Menu ###
+acFileNew.Caption='新建(&N)'
+acFileNew.Hint='新建|创建新文本'
+; ---
+acFileOpen.Caption='打开(&O)...'
+acFileOpen.Hint='打开|打开文本'
+acFileSave.Caption='保存(&S)'
+acFileSave.Hint='保存|保存文本'
+; ---
+acFilePrint.Caption='打印(&P)...'
+acFilePrint.Hint='打印|打印文本'
+
+; ### Edit Menu ###
+acEditUndo.Caption='撤销(&U)'
+acEditUndo.Hint='重做|还原最后动作'
+acEditRedo.Caption='重做(&R)'
+acEditRedo.Hint='重做|还原最后撤销'
+; ---
+acEditCut.Caption='剪切(&t)'
+acEditCut.Hint='剪切|剪切选择并把它放在剪贴板上'
+acEditCopy.Caption='复制(&C)'
+acEditCopy.Hint='复制|复制选择并把它放在剪贴板上'
+acEditPaste.Caption='粘贴(&P)'
+acEditPaste.Hint='粘贴|插入剪贴板内容'
+; ---
+acEditDelete.Caption='删除(&D)'
+acEditDelete.Hint='删除|擦除选择'
+acEditSelectAll.Caption='选择全部(&A)'
+acEditSelectAll.Hint='选择全部|选择整个文档'
+
+; ### Format Menu ###
+acFormatFont.Caption='字体(&F)'
+acFormatFont.Hint='字体|显示字体对话框'
+acFormatDefaultColor.Caption='默认颜色(&D)'
+acFormatDefaultColor.Hint='默认颜色|设置默认颜色'
+acFormatMoreColors.Caption='更多颜色(&M)...'
+acFormatMoreColors.Hint='更多颜色...|显示更多颜色'
+acFormatBold.Caption='粗体(&B)'
+acFormatBold.Hint='粗体|格式化选定的文本为粗体'
+acFormatItalic.Caption='斜体(&I)'
+acFormatItalic.Hint='斜体|格式化选定的文本为斜体'
+acFormatUnderline.Caption='下划线(&U)'
+acFormatUnderline.Hint='下划线|下划线选定的文本'
+acFormatStrikeOut.Caption='删除线(&S)'
+acFormatStrikeOut.Hint='删除线|选定文本加删除线'
+acFormatSuperscript.Caption='上标(&S)'
+acFormatSuperscript.Hint='上标|格式化选定的文本为上标'
+acFormatSubscript.Caption='下标(&b)'
+acFormatSubscript.Hint='下标|格式化选定的文本为下标'
+acFormatAlignLeft.Caption='左对齐(&L)'
+acFormatAlignLeft.Hint='左对齐|文本左缩进对齐'
+acFormatAlignCenter.Caption='居中(&C)'
+acFormatAlignCenter.Hint='居中|居中文本'
+acFormatAlignRight.Caption='右对齐(&R)'
+acFormatAlignRight.Hint='右对齐|文本右缩进对齐'
+acFormatBullets.Caption='项目符号(&B)'
+acFormatBullets.Hint='项目符号|插入一个项目符号到当前行'
+
+; ### Search Menu ###
+acSearchFind.Caption='查找(&F)...'
+acSearchFind.Hint='查找...|查找指定文本'
+acSearchFindNext.Caption='查找下一个(&N)'
+acSearchFindNext.Hint='查找下一个|查找下一匹配'
+acSearchReplace.Caption='替换(&R)'
+acSearchReplace.Hint='替换|替换文本部分'
+
+; ### Buttons ###
+btnDialog.WidthCancel=75
